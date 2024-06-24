@@ -1,0 +1,36 @@
+#home-section {
+  position: relative;
+  --home-top-margin: 20%;
+}
+
+.home-page {
+  display: flex;
+  margin-inline: auto;
+}
+
+.hire-button, 
+.download-button{
+  border-radius: 5vw;
+}
+
+.home-side-arrow {
+  height: 15vw;
+}
+
+.side-image {
+  padding-top: calc(var(--home-top-margin)*1.1);
+  
+}
+.home-header {
+  margin-top: var(--home-top-margin);
+  padding: 0;
+  font-size: 4vw;
+}
+
+.home-image {
+  object-position: center;
+}
+
+.overlay-image {
+  width: 70%
+}

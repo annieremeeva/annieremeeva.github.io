@@ -1,0 +1,21 @@
+.my-name {
+  font-family: Oswald;
+  font-size: 2vw;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 0.5fr;
+  align-items: center;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  align-items: center;
+  padding: 1% 5%;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--text-color);
+  z-index: 4;
+}
