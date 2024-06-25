@@ -1,21 +1,97 @@
 .my-name {
   font-family: Oswald;
-  font-size: 2vw;
 }
 
-.nav {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 0.5fr;
-  align-items: center;
+@media only screen and (min-width: 601px) {
+  .top-nav {
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr 1fr 0.5fr;
+    column-gap: 1vw;
+    align-items: center;
+    vertical-align: middle;
+  }
+
+  .top-nav a {
+    font-size: 1.5vw;
+  }
+
+  .my-name {
+    font-size: 2vw;   
+  }
+
+  .top-nav .icon {
+    display: none;
+  }
+
+  .theme-icon {
+    background-color: var(--element-color);
+    border-radius: 3vw;
+    width: 3vw;
+  }
+  
+  .theme-button {
+     width: 5vw;
+     border-radius: 5vw;
+     height: 5vw;
+  }
+
+  header {
+    padding-inline: 5%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .top-nav a:not(:first-child) {display: none;}
+  .top-nav .icon {
+    float: right;
+    display: block;
+    margin-left: 1%;
+    margin-top: 1.5%;
+    background-color: transparent;
+  }
+
+  header {
+    padding-left: 5%;
+    padding-right: 2%;
+  }
+
+  .theme-icon {
+    background-color: var(--element-color);
+    border-radius: 3vw;
+    width: 4vw;
+  }
+  
+  .theme-button {
+     width: 6vw;
+     border-radius: 5vw;
+     height: 6vw;
+     float: right;
+     margin-right: 2%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .dropdown-link .responsive {position: relative;}
+  .dropdown-link.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .top-nav .responsive a {
+    float: left;
+    display: block;
+    text-align: left;
+  }
 }
 
 header {
   position: sticky;
   top: 0;
   align-items: center;
-  padding: 1% 5%;
+  padding-block: 2%;
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: var(--text-color);
   z-index: 4;
 }
+

@@ -3,9 +3,14 @@
   --home-top-margin: 20%;
 }
 
+@media only screen and (max-width: 600px) {
+  .home-page {
+    margin-inline: 15vw;
+  }
+}
+
 .home-page {
   display: flex;
-  margin-inline: auto;
 }
 
 .hire-button, 
@@ -25,6 +30,7 @@
   margin-top: var(--home-top-margin);
   padding: 0;
   font-size: 4vw;
+  width: 80%;
 }
 
 .home-image {
@@ -33,4 +39,8 @@
 
 .overlay-image {
   width: 70%
+}
+
+.hire-button {
+  background-color: var(--accent-color);
 }

@@ -19,15 +19,17 @@
   <body>
     <header>
       <div class="row header">
-        <div class="my-name col-8">
-          Анна Еремеева
-        </div>
-        <nav class="col-4 nav">
-          <a href="#home-section">Главная</a>
-          <a href="#about-me">Обо мне</a>
-          <a href="#contact">Связаться</a>
-          <button>
-            <img src="images/lightbulb.svg" alt="">
+        
+        <nav class="top-nav">
+          <a href="index.html"><span class="my-name">
+            Анна Еремеева
+          </span></a>
+          <button class="icon js-menu-icon"><img src="images/menu-arrow.svg"></button>
+          <a class="dropdown-link" href="#home-section">Главная</a>
+          <a class="dropdown-link" href="#about-me">Обо мне</a>
+          <a class="dropdown-link" href="#contact">Связаться</a>
+          <button type="button" class="theme-button">
+            <img class="theme-icon" src="images/lightbulb.svg" alt="">
           </button>
         </nav>
       </div>
@@ -37,13 +39,13 @@
         <div class="col-8">
           <div class="home-page">
             <div class="side-image">
-              <img class="home-side-arrow" src="images/Vector 187.svg">
+              <img class="home-side-arrow" src="images/side-arrow.svg">
             </div>
             <div class="home-content">
               <h1 class="home-header">Junior Frontend <span class="accent">разработчица</span></h1>
               <div class="home-button-group">
-                <button class="hire-button">Нанять меня</button>
-                <button class="download-button">Скачать резюме</button>
+                <button type="button" class="hire-button">Нанять меня</button>
+                <button type="button" class="download-button">Скачать резюме</button>
               </div>
             </div>
           </div>
@@ -54,12 +56,12 @@
       </div>
 
     </section>
-    <section>
+    <section id="about-me">
       <h2>
         Обо мне
       </h2>
     </section>
-    <section>
+    <section >
       <h2>
         Мои навыки
       </h2>
@@ -74,8 +76,9 @@
         Мои проекты
       </h2>
     </section>
-    <section>
+    <section id="contact">
       <h2>Хотите меня нанять?</h2>
     </section>
+    <script src="scripts/nav.js"></script>
   </body>
 </html>
