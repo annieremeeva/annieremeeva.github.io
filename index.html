@@ -15,9 +15,12 @@
     <link href="/styles/general.css" rel="stylesheet">
     <link href="/styles/nav.css" rel="stylesheet">
     <link href="/styles/home.css" rel="stylesheet">
+    <link href="/styles/about-me.css" rel="stylesheet">
   </head>
   <body>
+    
     <header>
+      <div class="vert-line"></div>
       <div class="row header">
         
         <nav class="top-nav">
@@ -35,8 +38,9 @@
       </div>
     </header>
     <section id="home-section">
+      <div class="vert-line"></div>
       <div class="row">
-        <div class="col-8">
+        <div class="col-7">
           <div class="home-page">
             <div class="side-image">
               <img class="home-side-arrow" src="images/side-arrow.svg">
@@ -44,22 +48,38 @@
             <div class="home-content">
               <h1 class="home-header">Junior Frontend <span class="accent">разработчица</span></h1>
               <div class="home-button-group">
-                <button type="button" class="hire-button">Нанять меня</button>
-                <button type="button" class="download-button">Скачать резюме</button>
+                <button type="button" class="hire-button">Связаться</button>
+                <button type="button" class="download-button">Резюме <img class="download-icon" src="images/download.svg"></button>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-4 home-image">
+        <div class="col-5 home-image">
           <img class="overlay-image" src="images/person1.svg">
         </div>
       </div>
-
     </section>
     <section id="about-me">
-      <h2>
-        Обо мне
-      </h2>
+      <div class="vert-line"></div>
+      <div class="row">
+        <div class="col-4">
+          <img src="">
+          <h2 class="about-me-header">
+            Обо <span class="accent">мне</span>
+          </h2>
+          <p class="about-me-text">
+            Я Junior Front-end разработчица, выпускница кафедры "Прикладная информатика" Московского авиационного института.
+            <br>
+            Я хорошо лажу с другими людьми, способна осваивать новые навыки в короткие сроки. Умею разбираться в коде, в том числе и чужом.
+          </p>  
+        </div>
+        <div class="col-8">
+          <img class="about-me-picture" src="images/person-2.svg">
+        </div>
+
+      </div>
+      
+
     </section>
     <section >
       <h2>
@@ -77,7 +97,7 @@
       </h2>
     </section>
     <section id="contact">
-      <h2>Хотите меня нанять?</h2>
+      <h2>Мои контакты</h2>
     </section>
     <script src="scripts/nav.js"></script>
   </body>

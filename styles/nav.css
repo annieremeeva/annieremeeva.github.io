@@ -9,6 +9,8 @@
     column-gap: 1vw;
     align-items: center;
     vertical-align: middle;
+    padding-block: 1%;
+
   }
 
   .top-nav a {
@@ -33,26 +35,27 @@
      width: 5vw;
      border-radius: 5vw;
      height: 5vw;
+     
   }
 
-  header {
+  .top-nav {
     padding-inline: 5%;
   }
 }
 
 @media screen and (max-width: 600px) {
   .top-nav a:not(:first-child) {display: none;}
+  .top-nav {
+    padding-top: 3%;
+    padding-bottom: 1%;
+    padding-left: 5%;
+    padding-right: 1%;
+  }
   .top-nav .icon {
     float: right;
     display: block;
-    margin-left: 1%;
-    margin-top: 1.5%;
+    margin-right: 0;
     background-color: transparent;
-  }
-
-  header {
-    padding-left: 5%;
-    padding-right: 2%;
   }
 
   .theme-icon {
@@ -66,13 +69,16 @@
      border-radius: 5vw;
      height: 6vw;
      float: right;
-     margin-right: 2%;
+     
+     margin-right: 0;
+     margin-bottom: 2%;
+     padding: 0;
   }
 }
 
 @media screen and (max-width: 600px) {
   .dropdown-link .responsive {position: relative;}
-  .dropdown-link.responsive a.icon {
+  .dropdown-link.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
@@ -82,16 +88,20 @@
     display: block;
     text-align: left;
   }
+
+  
 }
 
 header {
   position: sticky;
   top: 0;
   align-items: center;
-  padding-block: 2%;
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: var(--text-color);
+  border-bottom-color: var(--line-color);
   z-index: 4;
 }
 
+.top-nav .icon:hover, .theme-button:hover {
+  cursor: pointer;
+}

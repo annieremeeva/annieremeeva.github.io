@@ -3,14 +3,25 @@
   --home-top-margin: 20%;
 }
 
+@media screen and (min-width: 601px) {
+  .side-image {
+    padding-top: calc(var(--home-top-margin)*1.1);
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .home-page {
-    margin-inline: 15vw;
+    margin-left: 10%
+  }
+  .side-image {
+    padding-top: calc(var(--home-top-margin)*1.1);
+    
   }
 }
 
 .home-page {
   display: flex;
+  margin-left: 10%
 }
 
 .hire-button, 
@@ -22,25 +33,49 @@
   height: 15vw;
 }
 
-.side-image {
-  padding-top: calc(var(--home-top-margin)*1.1);
-  
-}
+
 .home-header {
   margin-top: var(--home-top-margin);
   padding: 0;
   font-size: 4vw;
-  width: 80%;
+  width: 100%;
 }
 
 .home-image {
   object-position: center;
+  margin-block: calc(var(--home-top-margin)*0.2);
+  
 }
 
 .overlay-image {
-  width: 70%
+  width: 80%
 }
 
 .hire-button {
   background-color: var(--accent-color);
+}
+
+
+.download-icon {
+  background-color: var(--element-color);
+  width: 15%;
+  margin-top: 1%;
+  object-position: center;
+  
+}
+
+.home-button-group {
+  vertical-align: top;
+  
+}
+
+.home-arrow-down-button {
+  margin-left: 31.5%;
+}
+
+@media screen and (max-width: 600px) {
+  .overlay-image {
+    margin-left: 10%;
+  }
+  
 }
