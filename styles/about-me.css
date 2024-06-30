@@ -1,4 +1,30 @@
-#about-me {
-  background-image: url("/images/doodle-items.svg");
-  background-position: contain;
+.about-me-picture {
+  width: 70%;
+  margin-left: 15%;
+}
+
+.about-me-text,
+.about-me-header {
+  margin-left: 10%;
+}
+
+.about-me-header {
+  margin-top: 10%;
+}
+
+.about-me-text {
+  margin-top: 5%;
+}
+
+@media screen and (min-width: 601px) {
+  .about-me-text {
+    font-size: 1.3vw;
+    line-height: 130%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-me-text {
+    font-size: 3vw;
+  }
 }
