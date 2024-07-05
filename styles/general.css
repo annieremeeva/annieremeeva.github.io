@@ -5,6 +5,7 @@
 @import "./about-me.css";
 @import "./home.css";
 @import "./skills.css";
+@import "./edu.css";
 
 :root {
   --text-color: rgba(238, 238, 238, 1);

@@ -92,17 +92,61 @@
       
     </section>
     <section>
-      <h2>
-        Образование
+      <h2 class="edu-header">
+        <span class="accent">Образование</span>
       </h2>
+
+      <div class="edu-div">
+        <img class="edu-image" src="./images/mai.svg">
+        <p class="edu-text">Московский авиационный институт
+          <br>
+          Аэрокосмический институт, кафедра №609 "Прикладная информатика", специальность "Системный анализ и управление"
+          Год окончания — 2024
+        </p>
+      </div>
     </section>
     <section>
-      <h2>
+      <h2 class="project-header">
         Мои проекты
       </h2>
+      <div class="projects">
+        <div class="project-container">
+          <a href="https://annieremeeva.github.io/rock-paper-scissors-lizard-spock/">
+            <img src="./images/rock-paper-scissors-lizard-spock.png">
+          </a>
+          <a href="https://github.com/annieremeeva/rock-paper-scissors-lizard-spock/">
+            Исходный код
+          </a>
+        </div>
+      </div>
     </section>
     <section id="contact">
-      <h2>Мои контакты</h2>
+      <h2 class="contacts-header">Мои контакты</h2>
+      <div class="contacts">
+        <img class="contact-picture">
+        <form method="post" action="https://forms.un-static.com/forms/4423c992038404037b2cb9d814f884da36955549">
+          <div class="form-group-row">
+            <div>
+              <label for="name">Имя</label>
+              <input type="text" id="name" name="name" placeholder="Имя">
+            </div>
+            
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Email">
+            </div>
+          </div>
+          <div>
+            <label for="message">Сообщение</label>
+            <input type="text" id="message" name="message" placeholder="Сообщение">
+          </div>
+          <div>
+            <button type="submit">Отправить</button>
+          </div>
+
+          <label for="email"></label>
+        </form>
+      </div>
     </section>
     <script src="scripts/nav.js"></script>
   </body>
