@@ -4,18 +4,7 @@
     <title>Портфолио</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
     <link href="/styles/general.css" rel="stylesheet">
-    <link href="/styles/nav.css" rel="stylesheet">
-    <link href="/styles/home.css" rel="stylesheet">
-    <link href="/styles/about-me.css" rel="stylesheet">
   </head>
   <body>
     
@@ -27,12 +16,12 @@
           <a href="index.html"><span class="my-name">
             Анна Еремеева
           </span></a>
-          <button class="icon js-menu-icon"><img src="images/menu-arrow.svg"></button>
+          <button class="icon js-menu-icon"><img src="./images/menu-arrow.svg"></button>
           <a class="dropdown-link" href="#home-section">Главная</a>
           <a class="dropdown-link" href="#about-me">Обо мне</a>
           <a class="dropdown-link" href="#contact">Связаться</a>
           <button type="button" class="theme-button">
-            <img class="theme-icon" src="images/lightbulb.svg" alt="">
+            <img class="theme-icon" src="./images/lightbulb.svg" alt="">
           </button>
         </nav>
       </div>
@@ -43,19 +32,19 @@
         <div class="col-7">
           <div class="home-page">
             <div class="side-image">
-              <img class="home-side-arrow" src="images/side-arrow.svg">
+              <img class="home-side-arrow" src="./images/side-arrow.svg">
             </div>
             <div class="home-content">
               <h1 class="home-header">Junior Frontend <span class="accent">разработчица</span></h1>
               <div class="home-button-group">
                 <button type="button" class="hire-button">Связаться</button>
-                <button type="button" class="download-button">Резюме <img class="download-icon" src="images/download.svg"></button>
+                <button type="button" class="download-button">Резюме <img class="download-icon" src="./images/download.svg"></button>
               </div>
             </div>
           </div>
         </div>
         <div class="col-5 home-image">
-          <img class="overlay-image" src="images/person1.svg">
+          <img class="overlay-image" src="./images/person1.svg">
         </div>
       </div>
     </section>
@@ -74,34 +63,30 @@
           </p>  
         </div>
         <div class="col-8">
-          <img class="about-me-picture" src="images/person-2.svg">
+          <img class="about-me-picture" src="./images/person-2.svg">
         </div>
 
       </div>
       
 
     </section>
-    <section >
+    <section class="skills">
       <div class="row">
         <div class="col-12">
-          <h2>
+          <h2 class="skills-header">
             Мои навыки
           </h2>
         </div>
       </div>
       <div class="row">
-        <div class="col-3">
-          <p class="level">C1</p>
-          <p class="language">English</p>
-        </div>
-        <div class="col-3">
-          <img src="">
-        </div>
-        <div class="col-3">
-          <img src="">
-        </div>
-        <div class="col-3">
-          <img src="">
+        <div class="skills-container">
+          <img class="js-logo" src="./images/javascript-1.svg">
+          <img class="html-logo" src="./images/html-1.svg">
+          <img class="css-logo" src="./images/css-3.svg">
+          <div class="english-level">
+            <p class="level">C1</p>
+            <p class="language">English</p>
+          </div>
         </div>
       </div>
       
