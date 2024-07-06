@@ -6,6 +6,7 @@
 @import "./home.css";
 @import "./skills.css";
 @import "./edu.css";
+@import "./projects.css";
 
 :root {
   --text-color: rgba(238, 238, 238, 1);
@@ -100,8 +101,8 @@ button:hover {
 
 
 .vert-line {
-  z-index: -1;
-  position: absolute;
+  z-index: -200;
+  position: relative;
   width: 33%;
   height: 200vh;
   background-color: transparent;

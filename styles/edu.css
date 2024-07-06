@@ -1,0 +1,42 @@
+.edu-section {
+  margin: 7vh 3vw;
+}
+.edu-div {
+  display: flex;
+  justify-content: space-between;
+  
+  object-fit: contain;
+  margin: 5vh 10vw;
+  gap: 5vw;
+  align-items: center;
+}
+.edu-image {
+  width: 30vw;
+}
+
+.edu-header {
+  text-align: center;
+  margin-block: 5vh;
+}
+
+@media screen and (min-width: 601px) {
+  .edu-div {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .edu-text {
+    font-size: 2vw;
+    
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .edu-div {
+    flex-direction: column;
+  }
+
+  .edu-text {
+    font-size: 3vw;
+  }
+}

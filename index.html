@@ -3,13 +3,12 @@
   <head>
     <title>Портфолио</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link href="/styles/general.css" rel="stylesheet">
   </head>
   <body>
     
     <header>
-      <div class="vert-line"></div>
+      
       <div class="row header">
         
         <nav class="top-nav">
@@ -27,7 +26,7 @@
       </div>
     </header>
     <section id="home-section">
-      <div class="vert-line"></div>
+      
       <div class="row">
         <div class="col-7">
           <div class="home-page">
@@ -37,7 +36,7 @@
             <div class="home-content">
               <h1 class="home-header">Junior Frontend <span class="accent">разработчица</span></h1>
               <div class="home-button-group">
-                <button type="button" class="hire-button">Связаться</button>
+                <button type="button" class="hire-button">Связаться <img class="message-icon" src="./images/envelope.svg"></button>
                 <button type="button" class="download-button">Резюме <img class="download-icon" src="./images/download.svg"></button>
               </div>
             </div>
@@ -49,7 +48,7 @@
       </div>
     </section>
     <section id="about-me">
-      <div class="vert-line"></div>
+      
       <div class="row">
         <div class="col-4">
           <img src="">
@@ -80,9 +79,9 @@
       </div>
       <div class="row">
         <div class="skills-container">
-          <img class="js-logo" src="./images/javascript-1.svg">
-          <img class="html-logo" src="./images/html-1.svg">
-          <img class="css-logo" src="./images/css-3.svg">
+          <img class="js-logo" src="./images/javascript-1.svg" alt="javascript logo">
+          <img class="html-logo" src="./images/html-1.svg" alt="html logo">
+          <img class="css-logo" src="./images/css-3.svg" alt="css logo">
           <div class="english-level">
             <p class="level">C1</p>
             <p class="language">English</p>
@@ -91,16 +90,16 @@
       </div>
       
     </section>
-    <section>
+    <section class="edu-section">
       <h2 class="edu-header">
         <span class="accent">Образование</span>
       </h2>
 
       <div class="edu-div">
-        <img class="edu-image" src="./images/mai.svg">
+        <img class="edu-image" src="./images/mai.svg" alt="mai logo">
         <p class="edu-text">Московский авиационный институт
           <br>
-          Аэрокосмический институт, кафедра №609 "Прикладная информатика", специальность "Системный анализ и управление"
+          Аэрокосмический институт, кафедра №609 "Прикладная информатика", специальность "Системный анализ и управление" <br>
           Год окончания — 2024
         </p>
       </div>
@@ -112,7 +111,7 @@
       <div class="projects">
         <div class="project-container">
           <a href="https://annieremeeva.github.io/rock-paper-scissors-lizard-spock/">
-            <img src="./images/rock-paper-scissors-lizard-spock.png">
+            <img class="project-image" src="./images/rock-paper-scissors-lizard-spock.png">
           </a>
           <a href="https://github.com/annieremeeva/rock-paper-scissors-lizard-spock/">
             Исходный код
@@ -124,7 +123,7 @@
       <h2 class="contacts-header">Мои контакты</h2>
       <div class="contacts">
         <img class="contact-picture">
-        <form method="post" action="https://forms.un-static.com/forms/4423c992038404037b2cb9d814f884da36955549">
+        <form method="post" action="https://forms.un-static.com/forms/4423c992038404037b2cb9d814f884da36955549" style="z-index: 1000;">
           <div class="form-group-row">
             <div>
               <label for="name">Имя</label>
@@ -142,12 +141,12 @@
           </div>
           <div>
             <button type="submit">Отправить</button>
+            <button type="button"><img src="./images/phone.svg"></button>
           </div>
-
-          <label for="email"></label>
         </form>
       </div>
     </section>
     <script src="scripts/nav.js"></script>
+    
   </body>
 </html>

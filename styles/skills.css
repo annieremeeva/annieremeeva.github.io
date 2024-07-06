@@ -6,9 +6,8 @@
 }
 .skills-container {
   display: flex;
-  margin-block: 10%;
+  margin-block: 10% 15%;
   margin-inline: 10%;
-  padding-bottom: 15%;
   padding-right: 0;
   justify-content: space-between;
 }

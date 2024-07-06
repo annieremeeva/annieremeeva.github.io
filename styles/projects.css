@@ -1,0 +1,12 @@
+.projects {
+  display: flex;
+}
+
+.project-container {
+  width: 33vw;
+  background-color: var(--element-color);
+}
+
+.project-image {
+  width: 30vw;
+}
