@@ -1,0 +1,76 @@
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  gap: 5vw;
+  padding: 2vh 5vw;
+  align-items: center;
+  width: 94vw;
+}
+
+input {
+  background-color: var(--element-color);
+  border: none;
+  padding: 2vh 5%;
+  border-radius: 1.5vh;
+}
+
+.form-group {
+  display: grid;
+  grid-template-areas: 
+  "row"
+  "message";
+}
+textarea {
+  grid-area: message;
+  background-color: var(--element-color);
+  border: none;
+  border-radius: 1.5vh;
+  width: 100%;
+  resize: none;
+  padding: 2vh 2.5%;
+}
+
+.form-group-row {
+  grid-area: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2vw;
+  justify-content: space-between;
+
+}
+
+.input-group label {
+  font-weight: 700;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  margin-block: 2vh;
+}
+
+form {
+  width: 45vw;
+}
+
+@media screen and (max-width: 600px) {
+  .contacts {
+    flex-direction: column;
+  }
+}
+
+.contact-picture  {
+  width: 35vw;
+}
+
+.message {
+  height: 20vh;
+  text-align: start;
+  align-content: start;
+}
+
+.button-group {
+  display: flex;
+  align-items: center;
+}

@@ -16,9 +16,9 @@
             Анна Еремеева
           </span></a>
           <button class="icon js-menu-icon"><img src="./images/menu-arrow.svg"></button>
-          <a class="dropdown-link" href="#home-section">Главная</a>
-          <a class="dropdown-link" href="#about-me">Обо мне</a>
-          <a class="dropdown-link" href="#contact">Связаться</a>
+          <a href="#home-section">Главная</a>
+          <a href="#about-me">Обо мне</a>
+          <a href="#contact">Связаться</a>
           <button type="button" class="theme-button">
             <img class="theme-icon" src="./images/lightbulb.svg" alt="">
           </button>
@@ -104,7 +104,7 @@
         </p>
       </div>
     </section>
-    <section>
+    <section class="projects-section">
       <h2 class="project-header">
         Мои проекты
       </h2>
@@ -120,29 +120,33 @@
       </div>
     </section>
     <section id="contact">
-      <h2 class="contacts-header">Мои контакты</h2>
+      <h2 class="contacts-header">Мои <span class="accent">контакты</span></h2>
       <div class="contacts">
-        <img class="contact-picture">
+        <img class="contact-picture" src="./images/contact-picture.svg">
         <form method="post" action="https://forms.un-static.com/forms/4423c992038404037b2cb9d814f884da36955549" style="z-index: 1000;">
-          <div class="form-group-row">
-            <div>
-              <label for="name">Имя</label>
-              <input type="text" id="name" name="name" placeholder="Имя">
+          <div class="form-group">
+            <div class="form-group-row">
+              <div class="input-group">
+                <label for="name">Имя</label>
+                <input type="text" id="name" name="name" placeholder="Имя">
+              </div>
+              
+              <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email">
+              </div>
             </div>
-            
-            <div>
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="Email">
+            <div class="input-group">
+              <label for="message">Сообщение</label>
+              <textarea id="message" name="message" class="message" placeholder="Сообщение"></textarea>
+            </div>
+            <div class="button-group">
+              <button type="submit">Отправить</button>
+              <a href="tel:+79779754078"><img src="./images/phone.svg"></a>
+              <a href="https://t.me/annieremeeva"><img src="./images/send.svg"></a>
             </div>
           </div>
-          <div>
-            <label for="message">Сообщение</label>
-            <input type="text" id="message" name="message" placeholder="Сообщение">
-          </div>
-          <div>
-            <button type="submit">Отправить</button>
-            <button type="button"><img src="./images/phone.svg"></button>
-          </div>
+          
         </form>
       </div>
     </section>

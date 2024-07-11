@@ -1,12 +1,29 @@
+.projects-section {
+  background-image: url('../images/doodle-items.svg');
+}
+
+.project-header {
+  padding-block: 5vh;
+  text-align: center;
+}
+
 .projects {
   display: flex;
+  justify-content: center;
+  padding-bottom: 7vh;
 }
 
 .project-container {
-  width: 33vw;
-  background-color: var(--element-color);
+  width: 30vw;
+  background-color: var(--element-color-transparent);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-block: 2vh;
+  align-items: center;
+  border-radius: 1vh;
 }
 
 .project-image {
-  width: 30vw;
+  width: 25vw;
 }
