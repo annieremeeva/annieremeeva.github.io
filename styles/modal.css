@@ -1,0 +1,44 @@
+.modal {
+  background-color: var(--bg-color);
+  position: fixed;
+  top: 20vh;
+  left: 20vw;
+  width: 60%;
+  height: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 1vh;
+}
+
+.modal .form-group-row, .modal .input-group {
+  margin: 0;
+}
+
+.modal .input-group {
+  margin-bottom: 2vh;
+}
+
+
+
+.modal-backdrop {
+ background-color: rgba(0, 0, 0, 0.581);
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 99vw;
+ height: 99vh;
+ z-index: 9998;
+}
+
+.close-button {
+  position: fixed;
+  background-color: transparent;
+  top: 21vh;
+  right: 15vw;
+}
+
+
+.hidden {
+  display: none;
+}

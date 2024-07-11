@@ -36,7 +36,7 @@
             <div class="home-content">
               <h1 class="home-header">Junior Frontend <span class="accent">разработчица</span></h1>
               <div class="home-button-group">
-                <button type="button" class="hire-button">Связаться <img class="message-icon" src="./images/envelope.svg"></button>
+                <button type="button" class="hire-button js-hire-button">Связаться <img class="message-icon" src="./images/envelope.svg"></button>
                 <button type="button" class="download-button">Резюме <img class="download-icon" src="./images/download.svg"></button>
               </div>
             </div>
@@ -123,7 +123,7 @@
       <h2 class="contacts-header">Мои <span class="accent">контакты</span></h2>
       <div class="contacts">
         <img class="contact-picture" src="./images/contact-picture.svg">
-        <form method="post" action="https://forms.un-static.com/forms/4423c992038404037b2cb9d814f884da36955549" style="z-index: 1000;">
+        <form method="post" action="https://forms.un-static.com/forms/4423c992038404037b2cb9d814f884da36955549">
           <div class="form-group">
             <div class="form-group-row">
               <div class="input-group">
@@ -141,16 +141,54 @@
               <textarea id="message" name="message" class="message" placeholder="Сообщение"></textarea>
             </div>
             <div class="button-group">
-              <button type="submit">Отправить</button>
-              <a href="tel:+79779754078"><img src="./images/phone.svg"></a>
-              <a href="https://t.me/annieremeeva"><img src="./images/send.svg"></a>
+              <button class="send-button" type="submit">Отправить</button>
+              <a class="phone-button" href="tel:+79779754078"><img class="phone-icon" src="./images/phone.svg"></a>
+              <a class="telegram-button" href="https://t.me/annieremeeva"><img class="telegram-icon" src="./images/send.svg"></a>
             </div>
           </div>
-          
         </form>
       </div>
     </section>
-    <script src="scripts/nav.js"></script>
+
+    <div class="modal-backdrop hidden js-modal-backdrop">
+      <div class="modal hidden js-modal">
+        <button class="close-button js-close-button"><img class="close-icon" src="./images/icon-close.svg" alt="Закрыть"></button>
+        <form method="post" action="https://forms.un-static.com/forms/4423c992038404037b2cb9d814f884da36955549">
+          <div class="form-group">
+            <div class="form-group-row">
+              <div class="input-group">
+                <label for="name">Имя</label>
+                <input type="text" id="name" name="name" placeholder="Имя">
+              </div>
+              
+              <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email">
+              </div>
+            </div>
+            <div class="input-group">
+              <label for="message">Сообщение</label>
+              <textarea id="message" name="message" class="message" placeholder="Сообщение"></textarea>
+            </div>
+            <div class="button-group">
+              <button class="send-button" type="submit">Отправить</button>
+              <a class="phone-button" href="tel:+79779754078"><img class="phone-icon" src="./images/phone.svg"></a>
+              <a class="telegram-button" href="https://t.me/annieremeeva"><img class="telegram-icon" src="./images/send.svg"></a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    
+    <footer>
+      <nav class="footer-nav">
+        <a class="footer-link" href="#home-section"><img class="footer-icon" src="./images/home.svg"> Главная</a>
+        <a class="footer-link" href="#about-me"><img class="footer-icon" src="./images/user.svg"> Обо мне</a>
+        <a class="footer-link" href="#contact"><img class="footer-icon" src="./images/phone.svg"> Контакты</a>
+      </nav>
+    </footer>
+    <script src="./scripts/nav.js"></script>
+    <script src="./scripts/modal.js"></script>
     
   </body>
 </html>

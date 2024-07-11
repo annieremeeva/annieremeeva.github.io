@@ -5,6 +5,7 @@
   padding: 2vh 5vw;
   align-items: center;
   width: 94vw;
+  margin-bottom: 5vh;
 }
 
 input {
@@ -52,10 +53,18 @@ textarea {
 
 form {
   width: 45vw;
+  position: relative;
+  z-index: 3;
 }
 
 @media screen and (max-width: 600px) {
   .contacts {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .form-group-row {
+    display: flex;
     flex-direction: column;
   }
 }
@@ -71,6 +80,38 @@ form {
 }
 
 .button-group {
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 2fr 5vw 5vw;
+  column-gap: 3vw;
+}
+
+.contacts-header {
+  margin: 5vh 5%;
+}
+
+.send-button, .phone-button, .telegram-button {
+  background-color: var(--accent-color);
+  height: 5vw;
+  border-radius: 5vh;
+}
+
+.send-button {
+  margin: 0;
+  padding: 5%;
+}
+
+.phone-button, .telegram-button {
+  width: 5vw;
+}
+
+.phone-icon {
+  height: 3vw;
+  margin-top: 1vw;
+  margin-left: 1vw;
+}
+
+.telegram-icon {
+  height: 3.5vw;
+  margin-top: 1vw;
+  margin-left: 0.6vw;
 }

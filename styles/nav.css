@@ -17,13 +17,25 @@ header {
   padding-block: 1%;
 
 }
-
-.top-nav a {
-  font-size: 2.5vw;
+@media screen and (max-width: 600px) {
+  .top-nav a {
+    font-size: 2.5vw;
+  }
+  
+  .my-name {
+    font-size: 3vw;   
+  }
 }
 
-.my-name {
-  font-size: 3vw;   
+
+@media screen and (min-width: 601px) {
+  .top-nav a {
+    font-size: 1.5vw;
+  }
+  
+  .my-name {
+    font-size: 2vw;   
+  }
 }
 
 .top-nav .icon {
@@ -56,7 +68,7 @@ header {
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: var(--line-color);
-  z-index: 4;
+  z-index: 9999;
 }
 
 .top-nav .icon:hover, .theme-button:hover {

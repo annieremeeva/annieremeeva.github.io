@@ -1,0 +1,21 @@
+footer {
+  border-top: 1px solid var(--line-color);
+  padding-block: 10vh;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  gap: 5vw;
+  font-size: 2vw;
+}
+
+.footer-link {
+  display: flex;
+  gap: 1vw;
+  align-items: center;
+}
+
+.footer-icon {
+  height: 2.5vw;
+}

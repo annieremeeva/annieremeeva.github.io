@@ -8,6 +8,8 @@
 @import "./edu.css";
 @import "./projects.css";
 @import "./contact.css";
+@import "./footer.css";
+@import "./modal.css";
 
 :root {
   --text-color: rgba(238, 238, 238, 1);
