@@ -28,7 +28,7 @@ textarea {
   border-radius: 1.5vh;
   width: 100%;
   resize: none;
-  padding: 2vh 2.5%;
+  padding: 2vh 5%;
 }
 
 .form-group-row {
@@ -67,6 +67,10 @@ form {
     display: flex;
     flex-direction: column;
   }
+
+  form {
+    width: 60vw;
+  }
 }
 
 .contact-picture  {
@@ -83,6 +87,7 @@ form {
   display: grid;
   grid-template-columns: 2fr 5vw 5vw;
   column-gap: 3vw;
+  margin-top: 1vh;
 }
 
 .contacts-header {
@@ -97,7 +102,6 @@ form {
 
 .send-button {
   margin: 0;
-  padding: 5%;
 }
 
 .phone-button, .telegram-button {

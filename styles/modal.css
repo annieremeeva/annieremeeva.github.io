@@ -1,25 +1,36 @@
 .modal {
   background-color: var(--bg-color);
   position: fixed;
-  top: 20vh;
+  top: 12vh;
   left: 20vw;
-  width: 60%;
-  height: 65%;
+  width: 65vw;
+  height: max-content;
   display: flex;
   align-items: center;
   justify-content: space-around;
   border-radius: 1vh;
+  padding-top: 5vh;
 }
 
-.modal .form-group-row, .modal .input-group {
+.modal .form-group-row, .modal .input-group, .modal form {
   margin: 0;
+}
+
+@media screen and (max-width: 750px) {
+  .form-group-row {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .modal .input-group {
   margin-bottom: 2vh;
 }
 
-
+.modal form {
+  width: 45vw;
+  height: 65vh;
+}
 
 .modal-backdrop {
  background-color: rgba(0, 0, 0, 0.581);
@@ -34,8 +45,8 @@
 .close-button {
   position: fixed;
   background-color: transparent;
-  top: 21vh;
-  right: 15vw;
+  top: 13vh;
+  right: 10vw;
 }
 
 

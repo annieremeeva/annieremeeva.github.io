@@ -14,7 +14,10 @@ closeButton.addEventListener('click', () => {
   modalBackdrop.classList.add('hidden');
 });
 
-modalBackdrop.addEventListener('click', () => {
-  modal.classList.add('hidden');
-  modalBackdrop.classList.add('hidden');
+modalBackdrop.addEventListener('click', (event) => {
+  const isOutside = !event.target.closest('.modal');
+  if (isOutside) {
+    modal.classList.add('hidden');
+    modalBackdrop.classList.add('hidden');
+  }
 })
